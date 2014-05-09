@@ -9,7 +9,9 @@ In this tutorial we will walk through integrating the 2Checkout Payment API to s
 
 For our example application, we will be using MVC 4 targeting .NET 4.5.
 
-To start off, in Visual Studio create a new empty MVC 4 application and name it 'payment-api'. In your projects solution explorer, right click on References and open the NuGet package manager. Here you need to install Json.NET version 6.0.3 as it is a dependency for the 2Checkout .NET library.
+To start off, in Visual Studio create a new empty MVC 4 application and name it 'payment-api'. 
+
+In your projects solution explorer, right click on References and open the NuGet package manager. Here you need to install Json.NET version 6.0.3 as it is a dependency for the 2Checkout .NET library.
 
 We also need to [download the 2Checkout .NET library](https://github.com/2Checkout/2checkout-dotnet) and add the included TwoCheckout.dll as a reference. This provides us with a simple bindings to the API, INS and Checkout process so that we can integrate each feature with only a few lines of code. In this example, we will only be using the Payment API functionality of the library.
 
@@ -252,7 +254,7 @@ This view will display the transaction result to the buyer.
 
 # Create the Sale
 
-Create a new controller named Orders and add the following dependencies.
+Create a new controller named 'OrdersController' and add the following dependencies.
 
 ```
 using System;
